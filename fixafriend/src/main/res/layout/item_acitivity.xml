@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp">
+
+        <ImageView
+            android:layout_width="@dimen/user_image"
+            android:layout_height="@dimen/user_image"
+            android:id="@+id/civ_activity"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/margin2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20dp"
+            android:id="@+id/tv_activity_username"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/civ_activity"
+            android:layout_marginLeft="@dimen/margin2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:id="@+id/tv_activity_message"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_activity_username"
+            android:layout_alignStart="@+id/tv_activity_username" />
+        <TextView
+            android:id="@+id/tv_activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize3"
+            android:text="1h"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin2"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageView5"
+            android:background="@drawable/icon_time"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin1"
+            android:layout_toLeftOf="@+id/tv_activity_time"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

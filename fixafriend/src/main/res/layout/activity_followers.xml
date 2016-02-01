@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.han.activities.Followers">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/follower_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="@dimen/back_button_size"
+                android:layout_height="@dimen/back_button_size"
+                android:background="@drawable/ic_back4"
+                android:layout_marginLeft="@dimen/margin3"
+                android:id="@+id/btn_follower_back"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_follower_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textColor="#55dd55"
+                android:textSize="@dimen/textsize4"
+                android:textAlignment="center"
+                android:layout_alignBottom="@+id/btn_follower_back"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_followers">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+</RelativeLayout>

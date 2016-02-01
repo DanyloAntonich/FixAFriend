@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/drawParentWindow"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout android:id="@+id/drawWindow_colorSetting"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/colorPannel_board"
+                    android:layout_gravity="center_vertical"
+                    />
+            </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.example.rmk.mediaediting.Widget.Vertical_seekerBar
+                    android:id="@+id/seekBar_text_brightness"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:max="100"
+                    android:progress="50"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.example.rmk.mediaediting.Widget.Vertical_seekerBar
+                    android:id="@+id/seekBar_text_opactity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:max="100"
+                    android:progress="50"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/text_size_large"
+                android:paddingLeft="@dimen/text_size_big"
+                android:layout_weight="1">
+
+                <LinearLayout android:id="@+id/parent_displaytextcolor"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/gray_color"
+                    android:padding="@dimen/text_size_small"
+                    >
+                    <LinearLayout android:id="@+id/display_textColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+
+                        >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/parenet_displaystrokecolor"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/text_size_small"
+                    android:layout_weight="1">
+                    <LinearLayout android:id="@+id/display_strokeColor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10">
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_stroke_size"
+        android:progress="50"
+        android:max="100"/>
+</LinearLayout>
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel_imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_delete"/>
+</RelativeLayout>

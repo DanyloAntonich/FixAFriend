@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FeedViewActivity"
+    android:clickable="true">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout4"
+        android:background="@color/white">
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <ImageView
+            android:id="@+id/iv_user_feed"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin2"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_feed_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="@dimen/textsize2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_feed"
+            android:layout_toEndOf="@+id/iv_user_feed"
+
+            />
+        <TextView
+            android:id="@+id/tv_feed_edits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Edits"
+            android:layout_toLeftOf="@+id/imageView6"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_centerVertical="true"
+            android:onClick="onHeaderClick"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_time"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/tv_time_feed"
+            android:id="@+id/imageView6"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_time_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin1"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

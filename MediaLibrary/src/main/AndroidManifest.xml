@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rmk.mediaediting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- android:theme="@android:style/Theme.NoTitleBar" > -->
+    <application
+        tools:replace="android:theme"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        >
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".graphic_process.Adjustment"
+            android:label="@string/title_activity_adjustment" >
+        </activity>
+        <activity
+            android:name=".graphic_process.EffectActivity"
+            android:label="@string/title_activity_effect" >
+        </activity>
+        <activity
+            android:name=".graphic_process.FiltersActivity"
+            android:label="@string/title_activity_filters" >
+        </activity>
+        <activity
+            android:name=".graphic_process.Blur_FocusActivity"
+            android:label="@string/title_activity_blur__focus" >
+        </activity>
+        <activity
+            android:name=".graphic_process.DrawActivity"
+            android:label="@string/title_activity_draw" >
+        </activity>
+        <activity
+            android:name=".graphic_process.RotateActivity"
+            android:label="@string/title_activity_rotate" >
+        </activity>
+        <activity
+            android:name=".graphic_process.ResizeActivity"
+            android:label="@string/title_activity_resize" >
+        </activity>
+        <activity
+            android:name=".graphic_process.CropActivity"
+            android:label="@string/title_activity_crop" >
+        </activity>
+        <activity
+            android:name=".graphic_process.FrameActivity"
+            android:label="@string/title_activity_frame" >
+        </activity>
+        <activity
+            android:name=".graphic_process.SplashActivity"
+            android:label="@string/title_activity_splash" >
+        </activity>
+        <activity
+            android:name=".graphic_process.EmoticonsActivity"
+            android:label="@string/title_activity_emoticons" >
+        </activity>
+        <activity
+            android:name=".graphic_process.StickerActivity"
+            android:label="@string/title_activity_sticker" >
+        </activity>
+        <activity
+            android:name=".graphic_process.ToneCurveActivity"
+            android:label="@string/title_activity_tone_curve" >
+        </activity>
+        <activity
+            android:name=".graphic_process.TextActivity"
+            android:label="@string/title_activity_text" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoDrawActivity"
+            android:label="@string/title_activity_video_draw" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoEmoticonActivity"
+            android:label="@string/title_activity_video_emoticon" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoFrameActivity"
+            android:label="@string/title_activity_video_frame" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoStickerActivity"
+            android:label="@string/title_activity_video_sticker" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoTextActivity"
+            android:label="@string/title_activity_video_text" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoRecordAudioActivity"
+            android:label="@string/title_activity_video_record_audio" >
+        </activity>
+        <activity
+            android:name=".VideoEditorActivity"
+            android:label="@string/title_activity_video_editor" >
+        </activity>
+        <activity
+            android:name=".graphic_process.PostPhotoActivity"
+            android:label="@string/title_activity_post_photo" >
+        </activity>
+        <activity
+            android:name=".videoEditing.VideoPreviewActivity"
+            android:label="@string/title_activity_video_preview" >
+        </activity>
+        <activity
+            android:name=".videoEditing.PostVideoWindowActivity"
+            android:label="@string/title_activity_post_video_window" >
+        </activity>
+    </application>
+
+</manifest>

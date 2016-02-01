@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#000000">
+        <LinearLayout android:id="@+id/cancel_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:layout_weight="1">
+            <ImageView android:id="@+id/cancel_button"
+                android:layout_width="@dimen/padding_20dp"
+                android:layout_height="@dimen/padding_20dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/previousarrow_small"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Audio"
+                android:textSize="@dimen/padding_20dp"
+                android:textColor="@color/white_color"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ok_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/ok_button"
+                android:layout_width="@dimen/padding_20dp"
+                android:layout_height="@dimen/padding_20dp"
+                android:text="OK"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/white_color"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/nextarrow_small"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_color"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.65">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Please tap play button for adding your voice into video."
+                android:textColor="@color/black_color"
+                />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/parentWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+            <RelativeLayout android:id="@+id/drawWindow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:layout_below="@+id/bottom_bar"
+                >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <VideoView android:id="@+id/image_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+                    </VideoView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <ImageView android:id="@+id/coverImage"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_addrecord"
+                        android:onClick="onRecordAudio"
+                        />
+                </RelativeLayout>
+                <RelativeLayout android:layout_centerInParent="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <ProgressBar android:layout_centerInParent="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar_for_ffmpeg" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.6">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+                    <ImageView android:id="@+id/waveImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wavetypeimage"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/transparent_perfect"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="1s"
+                        android:textColor="@color/black_color"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

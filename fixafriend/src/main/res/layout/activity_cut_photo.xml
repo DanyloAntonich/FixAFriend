@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.han.capture.CutPhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/primary_dark_material_dark">
+        <RelativeLayout
+            android:id="@+id/rl_cut_profile_photo_banner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#111111"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tv_retake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="RETAKE"
+                android:textSize="@dimen/textsize2"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin2" />
+
+            <TextView
+                android:id="@+id/tv_use_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USE PHOTO"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin2"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

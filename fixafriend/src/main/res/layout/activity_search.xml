@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.han.main.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/search_menu"
+        android:background="@color/white">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/searchview"
+            android:layout_gravity="left|top"
+            android:queryHint="Search Friend"
+            android:background="@color/white"/>
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/margin4"
+            android:layout_marginLeft="@dimen/margin4"
+            android:background="@drawable/search_switch"
+            >
+            <LinearLayout
+                android:id="@+id/ll_search_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/search_switch"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btn_switch_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/round_corner"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_users"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/btn_switch_users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_explorer"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:id="@+id/btn_switch_explorer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explorer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin1"
+            android:background="@color/white">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_search"
+                android:layout_gravity="center_horizontal|bottom"
+                android:smoothScrollbar="true"/>
+
+            <!--<com.handmark.pulltorefresh.library.PullToRefreshScrollView-->
+                <!--xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/gridview_search"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:numColumns="3"-->
+                <!--android:gravity="fill"-->
+                <!--ptr:ptrMode="both" >-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linear_gridview"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="0dp"/>-->
+
+            <!--</com.handmark.pulltorefresh.library.PullToRefreshScrollView>-->
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/gridview_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:numColumns="3"
+                android:gravity="fill"
+                ptr:ptrMode="both" >
+
+            </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/search_feed"
+                android:layout_width="@dimen/width40"
+                android:layout_height="@dimen/width40"
+                android:layout_margin="@dimen/margin0"
+                android:background="@drawable/home_green"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txt_invitation_cnt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/red_icon"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_weight="0.2">
+            <TextView
+                android:layout_width="@dimen/width40"
+                android:layout_height="@dimen/width40"
+                android:layout_margin="@dimen/margin0"
+                android:background="@drawable/search_white"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/search_camera"
+                android:layout_width="@dimen/width40"
+                android:layout_height="@dimen/width40"
+                android:layout_margin="@dimen/margin0"
+                android:background="@drawable/camera_green"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/search_message"
+                android:layout_width="@dimen/width40"
+                android:layout_height="@dimen/width40"
+                android:layout_margin="@dimen/margin0"
+                android:background="@drawable/message_green"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txt_message_cnt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/red_icon"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="0.2">
+            <TextView
+                android:id="@+id/search_profile"
+                android:layout_width="@dimen/width40"
+                android:layout_height="@dimen/width40"
+                android:layout_margin="@dimen/margin0"
+                android:background="@drawable/user_green"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/txt_request_cnt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/red_icon"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

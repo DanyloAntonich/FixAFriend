@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/user_image"
+            android:layout_height="@dimen/user_image"
+            android:id="@+id/civ_choose_friend"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tv_username"
+            android:textSize="15dp"
+            android:id="@+id/tv_cf_username"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/civ_choose_friend"
+            android:layout_toEndOf="@+id/civ_choose_friend"
+            android:layout_marginLeft="@dimen/margin2"/>
+
+        <TextView
+            android:id="@+id/tv_is_follow"
+            android:layout_width="@dimen/width30"
+            android:layout_height="@dimen/height30"
+            android:background="@drawable/ic_check23"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin4"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

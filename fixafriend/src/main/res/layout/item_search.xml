@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp">
+
+        <com.han.widget.CircularImageView
+            android:layout_width="@dimen/user_image"
+            android:layout_height="@dimen/user_image"
+            android:id="@+id/civ_search"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tv_username"
+            android:textSize="15dp"
+            android:id="@+id/tv_username"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/civ_search"
+            android:layout_toEndOf="@+id/civ_search"
+            android:layout_margin="10dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin3"
+            android:layout_centerVertical="true"
+            android:background="@drawable/unfollow">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/round_corner_fb">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow"
+                    android:textSize="15dp"
+                    android:textColor="@color/black_color"
+                    android:textAlignment="center"
+                    android:background="@drawable/round_corner_fb"
+                    android:id="@+id/follow"
+                    android:layout_margin="0.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

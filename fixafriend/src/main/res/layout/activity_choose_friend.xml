@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.han.postactivities.ChooseFriendActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_banner_sendphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+
+        <Button
+
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:background="@drawable/ic_back8"
+            android:id="@+id/btn_back_cf"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/margin3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please choose friend"
+            android:textColor="@color/white_color"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_send_photo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#555555"
+            android:id="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_send4"
+            android:id="@+id/btn_send_photo_cf"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin3"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/margin4"
+        android:layout_marginLeft="@dimen/margin4"
+        android:background="@drawable/round_corner_choose_friend"
+        android:layout_marginTop="@dimen/margin1">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+            <Button
+                android:id="@+id/btn_switch_following"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Following"
+                android:textColor="@color/black"
+                android:background="@drawable/round_corner"
+                android:layout_alignParentLeft="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+            <Button
+                android:id="@+id/btn_switch_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Contacts"
+                android:textColor="@color/white"
+                android:background="@drawable/round_corner_choose_friend"
+                android:layout_alignParentLeft="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_font_color"
+        android:layout_marginTop="@dimen/margin1"/>
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/searchview_cf"
+
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_font_color"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_cf"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:smoothScrollbar="true"
+            android:layout_gravity="center_horizontal|bottom"
+            >
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </RelativeLayout>
+</LinearLayout>

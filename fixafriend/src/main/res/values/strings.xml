@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Fix-A-Friend</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_activity_signup_acitivity">SignupAcitivity</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_policy">PolicyActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_activity_like_user">LikeUserActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_inbox">InboxActivity</string>
+
+    <!--Color-->
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#dadada</color>
+    <color name="green">#00cc00</color>
+    <color name="light_green">#9bd79b</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#3b3838</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#858585</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#d6d4d4</color>
+
+    <color name="btn_gray_font_color">#4c4c4c</color>
+    <color name="bg_gray_color">#f2f2f2</color>
+    <color name="gray_border_color">#e4e4e4</color>
+    <color name="gray_font_color">#a2a2a2</color>
+    <color name="black_color">#444444</color>
+    <color name="white_color">#eeeeee</color>
+
+    <!-- menu dialog -->
+    <color name="dlg_back_color">#212121</color>
+    <color name="dlg_gray_color">#a2a2a2</color>
+    <color name="confirm_dlg_header_line_color">#74b6e8</color>
+    <color name="option_item_bgcolor_selected">#323232</color>
+    <color name="option_item_bgcolor">#212121</color>
+    <color name="dlg_menu_list_divide_color">#545454</color>
+
+    <!--  light  -->
+    <!-- progress dialog -->
+    <color name="trans_bg">#D8000000</color>
+
+    <!-- font color -->
+    <color name="font_blue_color">#26437d</color>
+    <color name="fb_font_color">#34267d</color>
+    <color name="main_background">#e2e2e2</color>
+
+    <!-- banner image -->
+    <color name="button_selected_color">#1E000000</color>
+    <string name="title_activity_profile__friend">Profile_Friend</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="no_connection">You have no internet connection</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_followings">Followings</string>
+    <string name="title_activity_followers">Followers</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_adobe_auth_session_helper">AdobeAuthSessionHelperActivity</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="title_activity_hash_tag">HashTagActivity</string>
+    <string name="title_activity_profile_friend">ProfileFriendActivity</string>
+    <string name="title_activity_send_photo">SendPhotoActivity</string>
+
+    <string name="app_id">195534044113237</string>
+
+    <string-array name="time_limit">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>One hour</item>
+        <item>6 hour</item>
+        <item>12 hour</item>
+        <item>24 hour</item>
+
+    </string-array>
+    <string-array name="share">
+        <item>Email</item>
+        <item>Facebook</item>
+        <item>Message</item>
+        <item>Twitter</item>
+        <item>Cancel</item>
+    </string-array>
+
+
+    <string name="title_activity_choose_friend">ChooseFriendActivity</string>
+    <string name="title_activity_video_view">VideoViewActivity</string>
+
+    <string-array name="choose_mode">
+        <item>Random</item>
+        <item>Choose friend</item>
+        <item>Cancel</item>
+    </string-array>
+    <string name="title_activity_capture_profile_photo">CaptureProfilePhotoActivity</string>
+    <string name="title_activity_cut_photo">CutPhotoActivity</string>
+    <string name="title_activity_feed_view">FeedViewActivity</string>
+    <string name="title_activity_profile_view">ProfileViewActivity</string>
+
+    <string-array name="what_u_want">
+        <item>Share to Facebook</item>
+        <item>Share to Twitter</item>
+        <item>Share to Instagram</item>
+        <item>Send Email</item>
+        <item>Save to Camera Roll</item>
+        <item>Report this post</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="what_u_want_profile">
+        <item>Share to Facebook</item>
+        <item>Share to Twitter</item>
+        <item>Share to Instagram</item>
+        <item>Send Email</item>
+        <item>Save to Camera Roll</item>
+        <item>Report this post</item>
+        <item>Delete this post</item>
+        <item>Cancel</item>
+    </string-array>
+    <string name="title_activity_post_edited_article">PostEditedArticleActivity</string>
+</resources>

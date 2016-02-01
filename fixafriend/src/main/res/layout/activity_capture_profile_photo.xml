@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.han.capture.CaptureProfilePhotoActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_edit_profile_photo_banner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#111111"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/btn_change_camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/ic_change_camera"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin1" />
+        <Button
+            android:id="@+id/btn_grid_picture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/whitegrid"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:id="@+id/btn_flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_flash_white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin1"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_below="@+id/rl_edit_profile_photo_banner"
+        android:layout_above="@+id/tl">
+
+        <LinearLayout
+            android:id="@+id/camera_preview_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+    </RelativeLayout>
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3">
+                <Button
+                    android:id="@+id/btn_back4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_back_white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_start_background"/>
+                <Button
+                    android:id="@+id/btn_capture"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_capture"
+                    android:layout_marginBottom="40dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3">
+                <ImageView
+                    android:id="@+id/iv_to_roll"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/ic_camera_roll"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

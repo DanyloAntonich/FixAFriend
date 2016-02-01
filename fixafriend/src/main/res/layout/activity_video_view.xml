@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context="com.han.activities.VideoViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_vv_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/dlg_gray_color">
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="@dimen/width50"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin2"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/done"
+            android:layout_marginLeft="@dimen/margin1"
+            android:layout_marginRight="@dimen/margin1"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_increase_time"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:layout_centerVertical="true"/>
+            <SeekBar
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar_up"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/tv_increase_time"
+                android:layout_toLeftOf="@+id/tv_decrease_time"
+                android:layout_marginLeft="@dimen/margin1"
+                android:layout_marginRight="@dimen/margin1"/>
+
+            <TextView
+                android:id="@+id/tv_decrease_time"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="0:30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/rl_vv_banner"
+        android:layout_above="@+id/rl_vv_bottom"
+        android:layout_marginTop="@dimen/margin3"
+        android:layout_marginBottom="@dimen/margin3"/>
+    <TableLayout
+        android:id="@+id/rl_vv_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/dlg_gray_color"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_playback_prev"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.4">
+                <TextView
+                    android:id="@+id/pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_playback_pause"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.4">
+                <TextView
+                    android:id="@+id/forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_playback_next"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <SeekBar
+                android:id="@+id/seekbar_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/margin2"
+                android:layout_marginRight="@dimen/margin2"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

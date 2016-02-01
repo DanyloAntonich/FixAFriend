@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp">
+
+        <ImageView
+            android:layout_width="@dimen/user_image"
+            android:layout_height="@dimen/user_image"
+            android:id="@+id/civ_message"
+            android:layout_marginLeft="@dimen/margin2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20dp"
+            android:id="@+id/tv_username_message"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/civ_message"
+            android:layout_marginLeft="@dimen/margin2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:id="@+id/tv_message"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_username_message"
+            android:layout_alignStart="@+id/tv_username_message" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_message_go"
+            android:background="@drawable/btn_action"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin2"
+             />
+        <TextView
+            android:id="@+id/txt_invitation_cnt_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin2"
+            android:background="@drawable/red_icon"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp">
+
+        <RelativeLayout
+        android:id="@+id/rl_profile_0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="0dp">
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/kcjCircleView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            CircleProgressView:cpv_barColor="#999999"
+            CircleProgressView:cpv_barWidth="35dp"
+            CircleProgressView:cpv_contourSize="0dp"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_rimColor="#dddddd"
+            CircleProgressView:cpv_rimWidth="35dp"
+            CircleProgressView:cpv_seekMode="true"
+            CircleProgressView:cpv_textColor="#ffffff"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitColor="#dddddd"/>
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:background="@drawable/feed"/>
+        <ImageView
+            android:id="@+id/iv_isvideo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_playvideo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:id="@+id/relativeLayout11"
+            android:background="@color/main_background">
+
+            <ImageView
+                android:id="@+id/iv_user_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/user_web"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin1"/>
+
+            <TextView
+                android:id="@+id/tv_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="@dimen/textsize2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_user_profile"
+                android:layout_toEndOf="@+id/iv_user_profile"
+                android:layout_marginLeft="@dimen/margin1"/>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_time"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/tv_time_profile"
+                android:id="@+id/imageView6"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_time_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/margin1"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/relativeLayout11"
+            android:id="@+id/profile_relativeLayout"
+            >
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/kcjCircleView2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                CircleProgressView:cpv_barColor="#999999"
+                CircleProgressView:cpv_barWidth="35dp"
+                CircleProgressView:cpv_contourSize="0dp"
+                CircleProgressView:cpv_autoTextSize="true"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_rimColor="#dddddd"
+                CircleProgressView:cpv_rimWidth="35dp"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_textColor="#ffffff"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="#dddddd"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/iv_profile_feed_image"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/iv_isvideo_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_playvideo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_profile_feed_edited_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin0"
+                android:layout_marginBottom="@dimen/margin3"
+                android:text="Edited_by"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin4">
+
+            <TextView
+                android:id="@+id/tv_profile_feed_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"
+                android:textSize="@dimen/textsize3"
+                android:layout_marginTop="@dimen/margin2"
+                android:layout_marginLeft="@dimen/margin1"
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_profile_feed_comment_body"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:textSize="@dimen/textsize2"-->
+                <!--android:layout_marginTop="@dimen/margin2"-->
+                <!--android:layout_marginLeft="@dimen/margin1" />-->
+            <LinearLayout
+                android:id="@+id/ll_profile_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginLeft="@dimen/margin1">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin1">
+
+                <ImageView
+                    android:id="@+id/iv_profile_feed_likes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/like_2x"
+                    android:layout_margin="@dimen/margin1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_profile_feed_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 likes"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_profile_feed_likes"
+                    android:layout_toEndOf="@+id/iv_profile_feed_likes" />
+                <ImageView
+                    android:id="@+id/iv_profile_feed_comment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/comment_2x"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="@dimen/margin1"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_feed_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 comments"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_profile_feed_comment"
+                    android:layout_toEndOf="@+id/iv_profile_feed_comment" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_color"
+                android:layout_marginTop="5dp"
+                >
+
+            </View>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin2">
+                <ImageView
+                    android:id="@+id/iv_profile_feed_likes_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/like_3x"
+                    android:layout_marginLeft="@dimen/margin1"/>
+
+                <ImageView
+                    android:id="@+id/iv_profile_feed_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ellipsis_3x"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="28dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/kcjCircleView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        CircleProgressView:cpv_barColor="#999999"
+        CircleProgressView:cpv_barWidth="35dp"
+        CircleProgressView:cpv_contourSize="0dp"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_rimColor="#dddddd"
+        CircleProgressView:cpv_rimWidth="35dp"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_textColor="#ffffff"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitColor="#009688"/>
+</LinearLayout>

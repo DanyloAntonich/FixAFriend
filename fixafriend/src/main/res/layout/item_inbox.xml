@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_inbox_image"
+                android:layout_centerHorizontal="true"/>
+
+           <RelativeLayout
+               android:id="@+id/rl_inbox"
+               android:layout_width="210dp"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true">
+               <RelativeLayout
+                   android:id="@+id/rl_playvideo"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_alignParentLeft="true">
+                   <ImageView
+                       android:id="@+id/iv_inbox_play_video"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:background="@drawable/play_video"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                       />
+               </RelativeLayout>
+               <RelativeLayout
+                   android:id="@+id/rl_editphoto"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true">
+               <ImageView
+                   android:id="@+id/iv_inbox_edit_image"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:background="@drawable/edit"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"/>
+                   </RelativeLayout>
+               <RelativeLayout
+                   android:id="@+id/rl_editvideo"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_alignParentRight="true">
+               <ImageView
+                   android:id="@+id/iv_inbox_edit_video"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:background="@drawable/edit"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"/>
+                   </RelativeLayout>
+
+           </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

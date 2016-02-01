@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.han.activities.ImageViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_super_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_color">
+        <RelativeLayout
+            android:id="@+id/rl_imageview_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height50"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+                <TextView
+                    android:id="@+id/btn_imageview_back"
+                    android:layout_width="@dimen/back_button_size"
+                    android:layout_height="@dimen/back_button_size"
+                    android:layout_marginLeft="@dimen/margin3"
+                    android:background="@drawable/ic_back4"
+                    android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image Preview"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/green"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin6"
+            android:layout_marginBottom="@dimen/margin6"
+            android:layout_below="@+id/rl_imageview_banner">
+            <ImageView
+                android:id="@+id/iv_imageview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

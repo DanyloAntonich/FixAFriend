@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressView">
+        <!-- Text-->
+        <attr name="cpv_text" format="string"/>
+        <attr name="cpv_unit" format="string"/>
+        <attr name="cpv_textColor" format="color"/>
+        <attr name="cpv_unitColor" format="color"/>
+        <attr name="cpv_showUnit" format="boolean"/>
+        <attr name="cpv_textSize" format="dimension"/>
+        <attr name="cpv_unitSize" format="dimension"/>
+        <attr name="cpv_textScale" format="float"/>
+        <attr name="cpv_unitScale" format="float"/>
+        <attr name="cpv_autoTextColor" format="boolean"/>
+        <attr name="cpv_autoTextSize" format="boolean"/>
+
+        <!-- Progress Bar -->
+        <attr name="cpv_maxValue" format="float"/>
+        <attr name="cpv_barWidth" format="dimension"/>
+        <attr name="cpv_barColor" format="color"/>
+        <attr name="cpv_barColor1" format="color"/>
+        <attr name="cpv_barColor2" format="color"/>
+        <attr name="cpv_barColor3" format="color"/>
+        <attr name="cpv_startAngle" format="integer"/>
+
+        <!-- Spinner-->
+        <attr name="cpv_spinColor" format="color"/>
+        <attr name="cpv_spinSpeed" format="float"/>
+        <attr name="cpv_spinBarLength" format="float"/>
+        <attr name="cpv_showTextInSpinningMode" format="boolean"/>
+
+        <!-- Rim-->
+        <attr name="cpv_rimColor" format="color"/>
+        <attr name="cpv_rimWidth" format="dimension"/>
+
+        <!-- Contour-->
+        <attr name="cpv_contourColor" format="color"/>
+        <attr name="cpv_contourSize" format="dimension"/>
+
+        <!-- Background color-->
+        <attr name="cpv_fillColor" format="color"/>
+
+        <!-- Seek mode-->
+        <attr name="cpv_seekMode" format="boolean"/>
+
+        <!-- Block -->
+        <attr name="cpv_blockCount" format="integer"/>
+        <attr name="cpv_blockScale" format="float"/>
+
+        <attr name="cpv_textMode" format="enum">
+            <enum name="Text" value="0"/>
+            <enum name="Percent" value="1"/>
+            <enum name="Value" value="2"/>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

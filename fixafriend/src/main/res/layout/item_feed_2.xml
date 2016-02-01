@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/relativeLayout4"
+        android:background="@color/white">
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <com.han.widget.CircularImageView
+            android:id="@+id/iv_user_feed"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin2"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_feed_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="@dimen/textsize2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_feed"
+            android:layout_toEndOf="@+id/iv_user_feed"
+
+            />
+        <TextView
+            android:id="@+id/tv_feed_edits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Edits"
+            android:layout_toLeftOf="@+id/imageView6"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_centerVertical="true"
+            android:onClick="onHeaderClick"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_time"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/tv_time_feed"
+            android:id="@+id/imageView6"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_time_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin1"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout">
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_feed_image"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_isvideo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_playvideo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_feed_edited_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin0"
+                android:layout_marginBottom="@dimen/margin3"
+                android:text="edited_by"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:id="@+id/linear_circle_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:background="@color/white">
+
+            <TextView
+                android:layout_marginTop="@dimen/margin3"
+                android:id="@+id/tv_feed_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi"
+                android:textSize="@dimen/textsize3"
+                android:layout_marginLeft="@dimen/margin1"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_hash_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginLeft="@dimen/margin1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_hash_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginLeft="@dimen/margin1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_feed_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin3"
+                android:layout_marginLeft="@dimen/margin1">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin1">
+
+                <ImageView
+                    android:id="@+id/iv_feed_likes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/like_2x"
+                    android:layout_margin="@dimen/margin1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_feed_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 likes"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_feed_likes"
+                    android:layout_toEndOf="@+id/iv_feed_likes" />
+                <ImageView
+                    android:id="@+id/iv_feed_comment"
+                    android:layout_width="30dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/comment_2x"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="@dimen/margin1"/>
+
+                <TextView
+                    android:id="@+id/tv_feed_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 comments"
+                    android:textSize="@dimen/textsize3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_feed_comment"
+                    android:layout_toEndOf="@+id/iv_feed_comment" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_color"
+                android:layout_marginTop="5dp"
+                >
+
+            </View>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin2">
+                <ImageView
+                    android:id="@+id/iv_feed_likes_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginLeft="@dimen/margin1"/>
+                <ImageView
+                    android:id="@+id/iv_feed_comment_1"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/comment_3x"
+                    android:layout_toRightOf="@+id/iv_feed_likes_1"
+                    android:layout_marginLeft="@dimen/margin4"/>
+                <ImageView
+                    android:id="@+id/iv_feed_share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ellipsis_3x"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="28dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
